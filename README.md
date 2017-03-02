@@ -1,0 +1,2 @@
+# cosmic-cubes
+Automation
