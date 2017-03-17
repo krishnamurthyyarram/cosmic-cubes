@@ -31,7 +31,7 @@ public class TestLoginSC_01
 		// Enter Username
 		login.getUsernameTextbox().sendKeys("admin");
 		// Enter password
-		login.getPasswordTextbox().sendKeys("mhdhdhdhd");
+		login.getPasswordTextbox().sendKeys("mhfefe");
 		// Click on Login button
 		login.getLoginButton().click();
 		// Get Error message
