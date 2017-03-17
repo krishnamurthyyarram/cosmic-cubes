@@ -25,7 +25,7 @@ public class TestLoginSC_01
 	}
 	// Step 5
 	@Test
-	public void testInvalidLoginTC_05()
+	public void testInvalidLoginTC_05() throws InterruptedException
 	{
 		login.waitForLoginPage();
 		// Enter Username
@@ -35,7 +35,9 @@ public class TestLoginSC_01
 		// Click on Login button
 		login.getLoginButton().click();
 		// Get Error message
+		Thread.sleep(10000);
 		String actualErrorMsg = login.getErrorMessageText().getText();
+		System.out.println(actualErrorMsg);
 		String expectedErrorMsg = "Username or Password is invalid. Please try again.";
 		Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
 	}

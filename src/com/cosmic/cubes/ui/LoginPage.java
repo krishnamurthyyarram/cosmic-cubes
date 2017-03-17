@@ -29,7 +29,7 @@ public class LoginPage {
 	}
 
 	public WebElement getLoginButton() {
-		return driver.findElement(By.xpath("//input[contains(@value, 'Login now')]"));
+		return driver.findElement(By.id("loginButton"));
 	}
 
 	public WebElement getDivisionHeaderText() {
